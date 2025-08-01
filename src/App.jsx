@@ -33,12 +33,10 @@ import Hello from "./components/Hello";
 import Welcome from "./components/Welcome";
 import Counter from "./components/Counter";
 import NameForm from "./components/NameForm";
-import Course from "./components/Course/Course";
-import Angular from "./assets/images/angular.jpg";
-import Bootstrap from "./assets/images/bootstrap5.png";
-import GeneralWeb from "./assets/images/kompleweb.jpg";
-import Csharp from "./assets/images/ccsharp.png";
+import FrsExample from "./components/frsExample/FrsExample";
+import StateExample from "./components/State/stateExample";
 import "bulma/css/bulma.css";
+import StateExample2 from "./components/State/stateExample2";
 
 function App() {
   return (
@@ -47,38 +45,9 @@ function App() {
       <Welcome />
       <Counter name="Turkana" />
       <NameForm />  */}
-      <div className="container">
-        <div className="columns">
-          <div className="column">
-            <Course
-              image={Angular}
-              title="Angular"
-              description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-            />
-          </div>
-          <div className="column">
-            <Course
-              image={Bootstrap}
-              title="Bootstrap 5"
-              description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-            />
-          </div>
-          <div className="column">
-            <Course
-              image={GeneralWeb}
-              title="General Web"
-              description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-            />
-          </div>
-          <div className="column">
-            <Course
-              image={Csharp}
-              title="Frontend"
-              description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-            />
-          </div>
-        </div>
-      </div>
+      {/* <FrsExample /> */}
+      {/* <StateExample/> */}
+      <StateExample2 />
     </>
   );
 }
