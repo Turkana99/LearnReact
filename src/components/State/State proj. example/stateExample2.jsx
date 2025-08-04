@@ -1,5 +1,6 @@
 import StateExample2Part from "./stateExample2Part";
 import { useState } from "react";
+import './stateExample2.css';
 
 function getRandomCourse() {
   const courseArray = ["Angular", "Bootstrap", "GeneralWeb", "Csharp"];
@@ -15,10 +16,10 @@ function StateExample2() {
   });
 
   return (
-    <>
-      <button onClick={handleClick}>Add</button>
-      <div>{courseList}</div>
-    </>
+    <div className="App">
+      <button className="appButton" onClick={handleClick}>Add Course</button>
+      <div className="courseList">{courseList}</div>
+    </div>
   );
 }
 

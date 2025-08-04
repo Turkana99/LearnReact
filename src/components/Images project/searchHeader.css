@@ -1,0 +1,12 @@
+.App {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.App  form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

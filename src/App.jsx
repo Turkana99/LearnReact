@@ -36,8 +36,8 @@ import NameForm from "./components/NameForm";
 import FrsExample from "./components/frsExample/FrsExample";
 import StateExample from "./components/State/stateExample";
 import "bulma/css/bulma.css";
-import StateExample2 from "./components/State/stateExample2";
-
+import StateExample2 from "./components/State/State proj. example/stateExample2";
+import SearchMain from "./components/Images project/searchMain";
 function App() {
   return (
     <>
@@ -47,7 +47,8 @@ function App() {
       <NameForm />  */}
       {/* <FrsExample /> */}
       {/* <StateExample/> */}
-      <StateExample2 />
+      {/* <StateExample2 /> */}
+      {/* <SearchMain /> */}
     </>
   );
 }
