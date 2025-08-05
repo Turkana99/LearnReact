@@ -1,0 +1,95 @@
+.task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.taskCreate {
+  width: 450px;
+}
+.taskEdit {
+  width: 100%;
+}
+
+h3,
+h1 {
+  font-weight: bold;
+  color: black;
+}
+.taskCreate form,
+.taskEdit form {
+  display: flex;
+  flex-direction: column;
+}
+
+.taskCreate form label,
+.taskEdit form label {
+  margin: 10px 0px;
+}
+
+.taskCreate input,
+textarea,
+.taskEdit form input,
+textarea {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.taskEdit button{
+    margin: 10px 0px;
+  padding: 10px;
+  border: 1px solid blueviolet;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.taskCreate button {
+  margin: 10px 0px;
+  padding: 10px;
+  border: 1px solid green;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.task-show div:first-child{
+  border: 1px solid green;
+  border-radius: 30px;
+  width: 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.delete-btn {
+  padding: 5px;
+  font-size: 15px;
+  width: 60px;
+  border: none;
+  border-radius: 30px;
+  background-color: red;
+  color: white;
+  margin-right: 10px;
+}
+
+.edit-btn {
+  padding: 5px;
+  font-size: 15px;
+  width: 60px;
+  border: none;
+  border-radius: 30px;
+  background-color: green;
+  color: white;
+  margin-right: 10px;
+}

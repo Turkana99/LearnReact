@@ -38,6 +38,7 @@ import StateExample from "./components/State/stateExample";
 import "bulma/css/bulma.css";
 import StateExample2 from "./components/State/State proj. example/stateExample2";
 import SearchMain from "./components/Images project/searchMain";
+import Task from "./components/Forms example/task";
 function App() {
   return (
     <>
@@ -49,8 +50,25 @@ function App() {
       {/* <StateExample/> */}
       {/* <StateExample2 /> */}
       {/* <SearchMain /> */}
+      <Task/>
     </>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
