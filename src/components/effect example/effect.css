@@ -1,0 +1,14 @@
+.firstEffect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.firstEffect button{
+    border: 1px solid lightgray;
+    background-color: aqua;
+}
+.firstDiv{
+    margin-right:30px;
+}

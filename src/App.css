@@ -45,3 +45,8 @@
 input{
   padding: 10px;
 } */
+
+
+button{
+  border: 1px solid lightgray;
+}
