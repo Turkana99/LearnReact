@@ -1,34 +1,4 @@
 import "./App.css";
-
-// function App() {
-//   const [count, setCount] = useState(0)
-
-//   return (
-//     <>
-//       <div>
-//         <a href="https://vite.dev" target="_blank">
-//           <img src={viteLogo} className="logo" alt="Vite logo" />
-//         </a>
-//         <a href="https://react.dev" target="_blank">
-//           <img src={reactLogo} className="logo react" alt="React logo" />
-//         </a>
-//       </div>
-//       <h1>Vite + React</h1>
-//       <div className="card">
-//         <button onClick={() => setCount((count) => count + 1)}>
-//           count is {count}
-//         </button>
-//         <p>
-//           Edit <code>src/App.jsx</code> and save to test HMR
-//         </p>
-//       </div>
-//       <p className="read-the-docs">
-//         Click on the Vite and React logos to learn more
-//       </p>
-//     </>
-//   )
-// }
-
 import Hello from "./components/Hello";
 import Welcome from "./components/Welcome";
 import Counter from "./components/Counter";
@@ -42,6 +12,8 @@ import Task from "./components/Forms example/task";
 import UseEffect from "./components/effect example/useEffect";
 import ContextProvider from "./components/Context Provider/contextprovider";
 import AuthContext from "./components/Context Provider/authContext";
+import { Provider } from "./components/Context Provider/taskContext";
+import Course from './components/CourseProject/Course';
 // import { useState } from "react";
 function App() {
   // const [authStatus, setAuthStatus] = useState(false);
@@ -58,11 +30,15 @@ function App() {
       {/* <StateExample/> */}
       {/* <StateExample2 /> */}
       {/* <SearchMain /> */}
-      <Task />
+      {/* <Provider>
+        <Task />
+      </Provider> */}
       {/* <UseEffect/> */}
       {/* <AuthContext.Provider value={{status: authStatus, login:loginAuth}}>
         <ContextProvider />
       </AuthContext.Provider> */}
+     <Course/>
+
     </>
   );
 }

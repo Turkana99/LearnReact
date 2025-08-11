@@ -1,15 +1,20 @@
 import "./task.css";
 import { useState } from "react";
 import TaskCreate from "./taskCreate";
-function TaskShow({ task, onDelete,onUpdate}) {
+import { useContext } from "react";
+import TaskContext from "../Context Provider/taskContext";
+function TaskShow({ task }) {
+  const { editTaskById, deleteTaskById } = useContext(TaskContext);
   const [showEdit, setShowEdit] = useState(false); // Bunu edit ve create formlari eyni oldugu lakin css-de ve is mexanizminde
   // kicik deyisiklikler oldugu ucun ferqlenmelerine gore bu deyisen vasitesile ferqlendireceyik.True-dursa nece gorunsun, false-dursa nece gorunsun.
   const handleDelete = () => {
-    onDelete(task.id);
+    // onDelete(task.id);
+    deleteTaskById(task.id);
   }; // burada bize props kimi gelen onDelete funk. icerisine delete edeceyimiz task id-ni otururuk.
   const handleSubmit = (id, updatedTitle, uptadetTaskDesc) => {
     setShowEdit(false);
-    onUpdate(id, updatedTitle, uptadetTaskDesc);
+    // onUpdate(id, updatedTitle, uptadetTaskDesc);
+    editTaskById(id, updatedTitle, uptadetTaskDesc);
   };
   const handleEdit = () => {
     setShowEdit(!showEdit); // Ilkin olaraq showEdit false alir, edit duymesine clickde true olaraq deyisir.
@@ -41,8 +46,3 @@ function TaskShow({ task, onDelete,onUpdate}) {
 }
 
 export default TaskShow;
-
-
-
-
-

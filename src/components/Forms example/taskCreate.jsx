@@ -1,7 +1,11 @@
 import "./task.css";
 import { useState } from "react";
+import { useContext } from "react";
+import TaskContext from "../Context Provider/taskContext";
 
-function TaskCreate({ onCreate, task, taskFormUpdate,onUpdate }) {
+function TaskCreate({ task, taskFormUpdate , onUpdate}) {
+  const { createTask } = useContext(TaskContext);
+  
   const [title, setTitle] = useState(task ? task.title : ""); //form daxilindeki title value-su saxlamaq ucun ist. edirik.
   // Burada initial value olaraq eger props-um olan tasks arrayinda task varsa onu, yoxdursa bos string menimsedirem.
   const [taskDesc, setTaskDesc] = useState(task ? task.taskDesc : ""); // form daxilindeki task description value-sunu saxlamaq ucun ist. edirik.
@@ -13,15 +17,20 @@ function TaskCreate({ onCreate, task, taskFormUpdate,onUpdate }) {
   }; // form description value-sunu set edirik.
   const handleSubmit = (event) => {
     event.preventDefault(); // Avtomatik yenilenmeni bloklayir submit zamani
-    if (taskFormUpdate) { // Bizde form-fa her iki halda submit button eynidir ve eyni funksiyani cagirir. 
-    // Lakin funksiya bilmelidir ki o edit etmelidir yoxsa create
+    if (taskFormUpdate) {
+      // Bizde form-fa her iki halda submit button eynidir ve eyni funksiyani cagirir.
+      // Lakin funksiya bilmelidir ki o edit etmelidir yoxsa create
       onUpdate(task.id, title, taskDesc); // Eger editdirse, bu melumatlari gonderirik.
+      // editTaskById(task.id, title, taskDesc);
     } else {
-      onCreate(title, taskDesc); // onCreate bir funks.dir props kimi gelir ve diger komponentde task yaratma isine baxir.
+      // onCreate(title, taskDesc); // onCreate bir funks.dir props kimi gelir ve diger komponentde task yaratma isine baxir.
+      createTask(title, taskDesc);
     }
     setTitle(""); // Taski yaratdiqdan ve ya edit etdikden sonra form title valuesunu resetlemek ucun ist. olunur.
     setTaskDesc(""); // Taski yaratdiqdan ve ya edit etdikden sonra form description valuesunu resetlemek ucun ist. olunur.
   };
+
+
   return (
     <>
       {taskFormUpdate ? ( // Gelen taskFormUpdate props valuesine gore komponentin edit-de nece, create-de nece goruneceyini tenzimleyirik.
@@ -52,3 +61,9 @@ function TaskCreate({ onCreate, task, taskFormUpdate,onUpdate }) {
 }
 
 export default TaskCreate;
+
+
+
+
+
+
