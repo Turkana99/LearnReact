@@ -48,5 +48,6 @@ input{
 
 
 button{
-  border: 1px solid lightgray;
+  border: 1px solid lightgray!important;
+  padding: 5px 10px!important;
 }

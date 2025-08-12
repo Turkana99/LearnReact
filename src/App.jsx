@@ -13,7 +13,9 @@ import UseEffect from "./components/effect example/useEffect";
 import ContextProvider from "./components/Context Provider/contextprovider";
 import AuthContext from "./components/Context Provider/authContext";
 import { Provider } from "./components/Context Provider/taskContext";
-import Course from './components/CourseProject/Course';
+import Course from "./components/CourseProject/Course";
+import Reducer from "./components/useReducer/reducer";
+import Memo from "./components/useMemo/memo";
 // import { useState } from "react";
 function App() {
   // const [authStatus, setAuthStatus] = useState(false);
@@ -37,8 +39,9 @@ function App() {
       {/* <AuthContext.Provider value={{status: authStatus, login:loginAuth}}>
         <ContextProvider />
       </AuthContext.Provider> */}
-     <Course/>
-
+      {/* <Course/> */}
+      {/* <Reducer/> */}
+      <Memo />
     </>
   );
 }

@@ -1,5 +1,11 @@
-import { useReducer } from "react";
+import "../../App.css";
+import  { useEffect, useReducer } from "react";
+import Calculate from "./calculate";
+import { NumberContext } from "./numberContext";
+
+
 const initialValue = 0;
+
 const reducer = (state, action) => {
   switch (action) {
     case "increment":
@@ -12,17 +18,26 @@ const reducer = (state, action) => {
       return state;
   }
 };
+
 function Reducer() {
-  const initialValue = 0;
   const [count, dispatch] = useReducer(reducer, initialValue);
+ useEffect(()=>{
+console.log('render');
+
+ }, [])
   return (
-    <div>
-      <div>count = {count}</div>
-      <button onClick={() =>dispatch("increment") }>Increment</button>
-      <button onClick={() => dispatch("decrement")}>Decrement</button>
-      <button onClick={() => dispatch("reset")}>Reset</button>
+    <div style={{ textAlign: "center" }}>
+      <NumberContext.Provider value={{ count, dispatch }}>
+        <Calculate />
+      </NumberContext.Provider>
     </div>
   );
 }
 
 export default Reducer;
+
+
+
+
+
+
