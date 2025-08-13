@@ -16,6 +16,10 @@ import { Provider } from "./components/Context Provider/taskContext";
 import Course from "./components/CourseProject/Course";
 import Reducer from "./components/useReducer/reducer";
 import Memo from "./components/useMemo/memo";
+import Callback from "./components/useCallback/callback";
+import RefDom from "./components/useRef/refDom";
+import Ref from "./components/useRef/ref";
+import Transition from "./components/useTransition/transition";
 // import { useState } from "react";
 function App() {
   // const [authStatus, setAuthStatus] = useState(false);
@@ -41,7 +45,11 @@ function App() {
       </AuthContext.Provider> */}
       {/* <Course/> */}
       {/* <Reducer/> */}
-      <Memo />
+      {/* <Memo /> */}
+      {/* <Callback/> */}
+      {/* <RefDom /> */}
+      {/* <Ref/> */}
+      <Transition/>
     </>
   );
 }

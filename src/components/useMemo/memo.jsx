@@ -14,7 +14,7 @@ function Memo() {
   const calculatedValue = useMemo(() => doubleCount(count), [count]);
 
   return (
-    <div style={{textAlign:"center"}}>
+    <div style={{ textAlign: "center" }}>
       <h1>useMemo nümunəsi</h1>
       <p>Say: {count}</p>
       <p>İkiqat dəyər: {calculatedValue}</p>
