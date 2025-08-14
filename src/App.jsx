@@ -20,6 +20,9 @@ import Callback from "./components/useCallback/callback";
 import RefDom from "./components/useRef/refDom";
 import Ref from "./components/useRef/ref";
 import Transition from "./components/useTransition/transition";
+import DifferedValue from "./components/useDefferedValue/defferedValue";
+import CustomHook from "./components/CustomHook/customHook";
+import Router from './components/Router/router';
 // import { useState } from "react";
 function App() {
   // const [authStatus, setAuthStatus] = useState(false);
@@ -49,7 +52,10 @@ function App() {
       {/* <Callback/> */}
       {/* <RefDom /> */}
       {/* <Ref/> */}
-      <Transition/>
+      {/* <Transition/> */}
+      {/* <DifferedValue/> */}
+      {/* <CustomHook/> */}
+      <Router />
     </>
   );
 }
