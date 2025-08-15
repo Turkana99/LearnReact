@@ -22,7 +22,8 @@ import Ref from "./components/useRef/ref";
 import Transition from "./components/useTransition/transition";
 import DifferedValue from "./components/useDefferedValue/defferedValue";
 import CustomHook from "./components/CustomHook/customHook";
-import Router from './components/Router/router';
+import Router from "./components/Router/router";
+import BurgerApp from "./components/BurgerProjects/BurgerApp";
 // import { useState } from "react";
 function App() {
   // const [authStatus, setAuthStatus] = useState(false);
@@ -55,7 +56,8 @@ function App() {
       {/* <Transition/> */}
       {/* <DifferedValue/> */}
       {/* <CustomHook/> */}
-      <Router />
+      {/* <Router /> */}
+      <BurgerApp />
     </>
   );
 }
