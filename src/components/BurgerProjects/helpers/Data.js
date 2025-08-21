@@ -1,5 +1,5 @@
 import React from "react";
-import BurgerImage from "../assets/burger.jpg";
+import BurgerImage from "../../../assets/images/burger.jpg";
 
 export const Data = [
   {
