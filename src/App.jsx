@@ -24,6 +24,7 @@ import DifferedValue from "./components/useDefferedValue/defferedValue";
 import CustomHook from "./components/CustomHook/customHook";
 import Router from "./components/Router/router";
 import BurgerApp from "./components/BurgerProjects/BurgerApp";
+import TodoApp from "./components/ToDoApp/TodoApp";
 // import { useState } from "react";
 function App() {
   // const [authStatus, setAuthStatus] = useState(false);
@@ -57,7 +58,8 @@ function App() {
       {/* <DifferedValue/> */}
       {/* <CustomHook/> */}
       {/* <Router /> */}
-      <BurgerApp />
+      {/* <BurgerApp /> */}
+      <TodoApp />
     </>
   );
 }
