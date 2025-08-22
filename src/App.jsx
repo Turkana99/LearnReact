@@ -24,11 +24,8 @@ import DifferedValue from "./components/useDefferedValue/defferedValue";
 import CustomHook from "./components/CustomHook/customHook";
 import Router from "./components/Router/router";
 import BurgerApp from "./components/BurgerProjects/BurgerApp";
-<<<<<<< HEAD
-import TodoApp from "./components/ToDoApp/TodoApp";
-=======
 import Formik from "./components/Formik/Formik";
->>>>>>> e291497e331265dfc8d4fa26685c9a5588ebda9c
+import TodoApp from './components/ToDoApp/TodoApp';
 // import { useState } from "react";
 function App() {
   // const [authStatus, setAuthStatus] = useState(false);
@@ -63,11 +60,9 @@ function App() {
       {/* <CustomHook/> */}
       {/* <Router /> */}
       {/* <BurgerApp /> */}
-<<<<<<< HEAD
-      <TodoApp />
-=======
-      <Formik />
->>>>>>> e291497e331265dfc8d4fa26685c9a5588ebda9c
+      {/* <TodoApp /> */}
+      {/* <Formik /> */}
+      <TodoApp/>
     </>
   );
 }
