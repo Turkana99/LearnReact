@@ -25,7 +25,8 @@ import CustomHook from "./components/CustomHook/customHook";
 import Router from "./components/Router/router";
 import BurgerApp from "./components/BurgerProjects/BurgerApp";
 import Formik from "./components/Formik/Formik";
-import TodoApp from './components/ToDoApp/TodoApp';
+import TodoApp from "./components/ToDoApp/TodoApp";
+import ReduxApp from './components/Redux Project/ReduxApp';
 // import { useState } from "react";
 function App() {
   // const [authStatus, setAuthStatus] = useState(false);
@@ -62,7 +63,8 @@ function App() {
       {/* <BurgerApp /> */}
       {/* <TodoApp /> */}
       {/* <Formik /> */}
-      <TodoApp/>
+      {/* <TodoApp/> */}
+      <ReduxApp />
     </>
   );
 }
